@@ -7,7 +7,7 @@ type props = {
   children: ReactNode;
 };
 
-export default function AnimateHeader({ children }: props) {
+export default function AnimateProfiles({ children }: props) {
   const ref = useRef(null);
 
   return (

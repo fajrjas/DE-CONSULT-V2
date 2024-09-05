@@ -28,7 +28,6 @@ export default function LogoImage() {
         height: "450px",
         position: "relative", // Required for Next.js <Image />
       }}
-      whileHover={{ scale: 1.1 }}
       className=" hidden md:block"
     >
       <Image
