@@ -22,7 +22,12 @@ export default function Homepage() {
         </div>
       </AnimateHeader>
 
-      <AdminProfiles />
+      <div>
+        <h1 className="text-center text-3xl font-bold underline decoration-blue-700 font-mono ">
+          The Admins
+        </h1>
+        <AdminProfiles />
+      </div>
     </div>
   );
 }

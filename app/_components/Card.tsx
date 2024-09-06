@@ -14,7 +14,8 @@ export default function CardProfile(props: Props) {
   return (
     <Card isFooterBlurred radius="lg" className="border-none">
       <Image
-        alt="Woman listing to music"
+        isBlurred
+        alt={props.alt}
         className="object-cover"
         height={200}
         src={props.src}

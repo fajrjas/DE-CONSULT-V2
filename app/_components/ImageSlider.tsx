@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
-import Image from "next/image"; // Import Next.js Image component
+// import Image from "next/image"; // Import Next.js Image component
+import { Image } from "@nextui-org/react";
 
 const imageVariants = {
   hidden: {
@@ -33,8 +34,8 @@ export default function LogoImage() {
       <Image
         src="/DE_CONSULT_LOGO-Photoroom.png" // Path to the image in the public folder
         alt="DE Consult Logo"
-        layout="fill" // Ensures the image fills the container
-        objectFit="contain" // Ensures the image maintains its aspect ratio
+        // layout="fill" // Ensures the image fills the container
+        // objectFit="contain" // Ensures the image maintains its aspect ratio
       />
     </motion.div>
   );

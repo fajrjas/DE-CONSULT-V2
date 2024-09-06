@@ -10,6 +10,8 @@ export default function AdminProfiles() {
   useEffect(() => {
     if (isInView) {
       mainControls.start("visible");
+    } else {
+      mainControls.start("hidden");
     }
   }, [isInView]);
 
@@ -17,12 +19,12 @@ export default function AdminProfiles() {
     <div ref={ref} className="flex justify-evenly h-[60dvh] items-center">
       <motion.div
         variants={{
-          hidden: { opacity: 0, y: 90 },
-          visible: { opacity: 1, y: 0 },
+          hidden: { x: 180 },
+          visible: { x: 0 },
         }}
         initial="hidden"
         animate={mainControls}
-        transition={{ duration: 0.78, delay: 0.25 }}
+        transition={{ duration: 1.2, delay: 0.8 }}
       >
         <CardProfile
           alt="admin-profile"
@@ -34,12 +36,12 @@ export default function AdminProfiles() {
       </motion.div>
       <motion.div
         variants={{
-          hidden: { opacity: 0, y: -90 },
-          visible: { opacity: 1, y: 0 },
+          hidden: { scale: 1.33, zIndex: 3 },
+          visible: { scale: 1 },
         }}
         initial="hidden"
         animate={mainControls}
-        transition={{ duration: 0.78, delay: 0.25 }}
+        transition={{ duration: 0.7, delay: 0.25 }}
       >
         <CardProfile
           alt="admin-profile"
@@ -51,12 +53,12 @@ export default function AdminProfiles() {
       </motion.div>
       <motion.div
         variants={{
-          hidden: { opacity: 0, y: 90 },
-          visible: { opacity: 1, y: 0 },
+          hidden: { x: -180 },
+          visible: { x: 0 },
         }}
         initial="hidden"
         animate={mainControls}
-        transition={{ duration: 0.78, delay: 0.25 }}
+        transition={{ duration: 1.2, delay: 0.8 }}
       >
         <CardProfile
           alt="admin-profile"
